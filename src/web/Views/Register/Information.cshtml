@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Information Member ";
+}
+@model RegisterModel
+<div class="row">
+    <div class="col-md-12">
+        <h2>@ViewData["Title"]</h2>
+        <div asp-validation-summary="All" class="text-denger"></div>
+        <form asp-action="Success" asp-controller="Register">
+            UmayPlus Card: @ViewData["register.txt_CardNo"]<br/>
+            Personal Card: @ViewData["register.txt_CardID"]<br/>
+            Birth    Date: @ViewData["register.txt_BirthDate"]<br/>
+            Mobile       : @ViewData["register.txt_Mobile"] <br/>
+            <input type="submit" value="Next">
+        </form>
+    </div>
+</div>

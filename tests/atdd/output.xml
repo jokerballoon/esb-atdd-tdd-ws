@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180118 15:57:58.699" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/joker/Documents/Source/workshop/esb-atdd-tdd-ws/tests/atdd/test.robot" id="s1" name="Test">
+<test id="s1-t1" name="การลงทะเบียนใช้ umayplus+ ได้สำเร็จ Odterm เท่ากับ 0">
+<kw name="กรอกข้อมูลลูกค้า">
+<arguments>
+<arg>6273885053341539</arg>
+<arg>3100505143401</arg>
+<arg>01/01/2530</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://localhost:5000</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180118 15:57:58.804" level="INFO">Opening browser 'chrome' to base url 'http://localhost:5000'.</msg>
+<status status="PASS" endtime="20180118 15:58:01.133" starttime="20180118 15:57:58.803"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>txt_CardNo</arg>
+<arg>${CardNo}</arg>
+</arguments>
+<msg timestamp="20180118 15:58:01.134" level="INFO">Typing text '6273885053341539' into text field 'txt_CardNo'.</msg>
+<status status="PASS" endtime="20180118 15:58:01.302" starttime="20180118 15:58:01.133"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>txt_CardID</arg>
+<arg>${CardID}</arg>
+</arguments>
+<msg timestamp="20180118 15:58:01.302" level="INFO">Typing text '3100505143401' into text field 'txt_CardID'.</msg>
+<status status="PASS" endtime="20180118 15:58:01.427" starttime="20180118 15:58:01.302"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>txt_BirthDate</arg>
+<arg>${Date_Day}</arg>
+</arguments>
+<msg timestamp="20180118 15:58:01.428" level="INFO">Typing text '01/01/2530' into text field 'txt_BirthDate'.</msg>
+<status status="PASS" endtime="20180118 15:58:01.535" starttime="20180118 15:58:01.427"></status>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20180118 15:58:01.536" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" endtime="20180118 15:58:01.686" starttime="20180118 15:58:01.535"></status>
+</kw>
+<status status="PASS" endtime="20180118 15:58:01.686" starttime="20180118 15:57:58.803"></status>
+</kw>
+<kw name="แสดงข้อมูลลูกค้า">
+<arguments>
+<arg>6273885053341539</arg>
+<arg>3100505143401</arg>
+<arg>01/01/2530</arg>
+<arg>092224955</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${CardNo}</arg>
+</arguments>
+<status status="PASS" endtime="20180118 15:58:01.707" starttime="20180118 15:58:01.688"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${CardID}</arg>
+</arguments>
+<status status="PASS" endtime="20180118 15:58:01.722" starttime="20180118 15:58:01.708"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${Date_Day}</arg>
+</arguments>
+<status status="PASS" endtime="20180118 15:58:01.738" starttime="20180118 15:58:01.723"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${MobileNo}</arg>
+</arguments>
+<status status="PASS" endtime="20180118 15:58:01.752" starttime="20180118 15:58:01.738"></status>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20180118 15:58:01.752" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" endtime="20180118 15:58:01.903" starttime="20180118 15:58:01.752"></status>
+</kw>
+<status status="PASS" endtime="20180118 15:58:01.903" starttime="20180118 15:58:01.687"></status>
+</kw>
+<status status="PASS" endtime="20180118 15:58:01.904" critical="yes" starttime="20180118 15:57:58.801"></status>
+</test>
+<status status="PASS" endtime="20180118 15:58:01.905" starttime="20180118 15:57:58.701"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Test" pass="1">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
